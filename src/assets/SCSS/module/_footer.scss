@@ -1,0 +1,10 @@
+@use '../theme/colores' as colores;
+
+.footer{
+    background-color: colores.$color-primario;
+    color: #fff;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

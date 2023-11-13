@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MoleculesModule } from './molecules/molecules.module';
-import { AtomsModule } from './atoms/atoms.module';
+import { OrganismsModule } from './organisms/organisms.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -13,8 +13,8 @@ import { AtomsModule } from './atoms/atoms.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MoleculesModule
-    
+    PagesModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

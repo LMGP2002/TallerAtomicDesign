@@ -1,0 +1,12 @@
+@use '../theme/colores' as colores;
+
+@for $i from 1 through length(colores.$colores){
+
+    $color:nth(colores.$colores, $i);
+
+    .card#{$i}-boton:hover{
+        background-color: #fff;
+        color: $color;
+        border: 1px solid $color;
+    }
+}

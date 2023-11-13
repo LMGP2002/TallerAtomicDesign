@@ -1,4 +1,10 @@
 
-<app-titulo-card [titulo]="titulo"></app-titulo-card>
-<app-parrafo-card></app-parrafo-card>
-<app-boton-card></app-boton-card>
+<div [class]="'card card'+cardNumber">
+    <app-titulo-card [class]="'card'+cardNumber+'-titulo'" [titulo]="titulo"></app-titulo-card>
+    <app-parrafo-card></app-parrafo-card>
+    <app-boton-card  class="boton" [cardNumber]="cardNumber"></app-boton-card>
+</div>
+
+
+
+
