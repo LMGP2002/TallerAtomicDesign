@@ -1,11 +1,2 @@
 @use '../../../assets/SCSS/module/header';
 
-.enlace::before{
-    content: '';
-      display: inline-block;
-      width: 2px;
-      height: 3em; 
-      background-color: #fff; 
-      margin: 0 0.5em; 
-      vertical-align: middle
-}
