@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-boton-card',
@@ -11,8 +11,17 @@ export class BotonCardComponent {
 
   }
   @Input() cardNumber:number=0
+  @Input() titulo:string=''
 
   irRegistro(){
-    this.router.navigate(['/registro']);
+
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        cardNumber: this.cardNumber,
+        curso:this.titulo
+      }
+    };
+
+    this.router.navigate(['/registro'], navigationExtras);
   }
 }

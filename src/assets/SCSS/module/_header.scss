@@ -15,6 +15,10 @@
         width: 10px;
     }
 
+    &-enlace{
+        cursor: pointer;
+    }
+
     &-enlace::before{
         content: '';
         display: inline-block;

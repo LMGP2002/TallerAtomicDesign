@@ -7,4 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class InputRegistroComponent {
   @Input() valorInput:string='';
+  @Input() colorInput:number=0;
+  
+
+
 }

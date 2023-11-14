@@ -1,0 +1,9 @@
+@use '../../../assets/SCSS/theme/colores' as colores;
+
+
+@for $i from 1 through length(colores.$colores){
+    $color:nth(colores.$colores, $i);
+    .input-color#{$i}{
+        color: $color;
+    }
+}

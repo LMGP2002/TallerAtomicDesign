@@ -19,7 +19,8 @@ import { RegistroSectionComponent } from './registro-section/registro-section.co
   imports: [
     CommonModule,
     MoleculesModule,
-    AtomsModule
+    AtomsModule,
+    
   ],
   exports:[
     CardSectionComponent,

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-registro-section',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./registro-section.component.scss']
 })
 export class RegistroSectionComponent {
-
+ @Input() cardNumber:number=0
+ @Input() curso:string=''
 }

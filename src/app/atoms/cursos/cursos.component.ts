@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-cursos',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./cursos.component.scss']
 })
 export class CursosComponent {
+  constructor(private router:Router){
+
+  }
+  irCursos(){
+
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        id: 1
+      }
+    };
+
+    this.router.navigate(['/cursos'], navigationExtras);
+  }
 
 }

@@ -2,7 +2,10 @@
 <div [class]="'card card'+cardNumber">
     <app-titulo-card [class]="'card'+cardNumber+'-titulo'" [titulo]="titulo"></app-titulo-card>
     <app-parrafo-card></app-parrafo-card>
-    <app-boton-card  class="boton" [cardNumber]="cardNumber"></app-boton-card>
+    <app-boton-card *ngIf="id==0;else elseBlock"  class="boton" [cardNumber]="cardNumber" [titulo]="titulo"></app-boton-card>
+    <ng-template #elseBlock>
+        <app-barra-progreso [cardNumber]="cardNumber"></app-barra-progreso>
+    </ng-template>
 </div>
 
 

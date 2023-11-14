@@ -1,5 +1,8 @@
 
 <section class="section-registro">
-    <app-title-registro [tituloRegistro]="'Registrarse al curso de Taller HTML'"></app-title-registro>
-    <app-form-registro></app-form-registro>
+    <div>
+        <app-btn-volver></app-btn-volver>
+        <app-title-page [titlePage]="'Registrarse al curso de '+curso"></app-title-page>
+    </div>
+    <app-form-registro [curso]="curso" [cardNumber]="cardNumber"></app-form-registro>
 </section>

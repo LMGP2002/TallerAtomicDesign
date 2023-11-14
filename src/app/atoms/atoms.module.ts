@@ -6,9 +6,14 @@ import { BotonCardComponent } from './boton-card/boton-card.component';
 import { TitleHeaderComponent } from './title-header/title-header.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { TextFooterComponent } from './text-footer/text-footer.component';
-import { TitleRegistroComponent } from './title-registro/title-registro.component';
 import { LabelRegistroComponent } from './label-registro/label-registro.component';
 import { InputRegistroComponent } from './input-registro/input-registro.component';
+import { BtnRegistroComponent } from './btn-registro/btn-registro.component';
+import { MsgAlertComponent } from './msg-alert/msg-alert.component';
+import { BtnVolverComponent } from './btn-volver/btn-volver.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { TitlePageComponent } from './title-page/title-page.component';
+import { BarraProgresoComponent } from './barra-progreso/barra-progreso.component';
 
 
 
@@ -20,9 +25,13 @@ import { InputRegistroComponent } from './input-registro/input-registro.componen
     TitleHeaderComponent,
     CursosComponent,
     TextFooterComponent,
-    TitleRegistroComponent,
     LabelRegistroComponent,
     InputRegistroComponent,
+    BtnRegistroComponent,
+    MsgAlertComponent,
+    BtnVolverComponent,
+    TitlePageComponent,
+    BarraProgresoComponent
   ],
   exports:[
     BotonCardComponent,
@@ -31,12 +40,17 @@ import { InputRegistroComponent } from './input-registro/input-registro.componen
     TitleHeaderComponent,
     CursosComponent,
     TextFooterComponent,
-    TitleRegistroComponent,
     LabelRegistroComponent,
     InputRegistroComponent,
+    BtnRegistroComponent,
+    BtnVolverComponent,
+    TitlePageComponent,
+    BarraProgresoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
+
   ]
 })
 export class AtomsModule { }

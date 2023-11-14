@@ -1,0 +1,43 @@
+
+@use '../theme/colores' as colores;
+
+.progreso{
+    text-align: center;
+    @for $i from 1 through length(colores.$colores){
+        $color:nth(colores.$colores, $i);
+        .avance#{$i}{
+            color: $color;
+        }
+    }
+}
+
+.barra-container{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    
+    
+    .barra{
+        width: 100px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 10px;
+    }
+
+    @for $i from 1 through length(colores.$colores){
+        $color:nth(colores.$colores, $i);
+        &#{$i}{
+            border: 1px solid $color;
+        }
+        .barra#{$i}{
+            background-color: $color;
+        }
+        .avance#{$i}{
+            color: $color;
+        }
+       
+
+        
+    }
+    
+}
