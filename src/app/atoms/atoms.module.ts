@@ -6,6 +6,9 @@ import { BotonCardComponent } from './boton-card/boton-card.component';
 import { TitleHeaderComponent } from './title-header/title-header.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { TextFooterComponent } from './text-footer/text-footer.component';
+import { TitleRegistroComponent } from './title-registro/title-registro.component';
+import { LabelRegistroComponent } from './label-registro/label-registro.component';
+import { InputRegistroComponent } from './input-registro/input-registro.component';
 
 
 
@@ -16,7 +19,10 @@ import { TextFooterComponent } from './text-footer/text-footer.component';
     BotonCardComponent,
     TitleHeaderComponent,
     CursosComponent,
-    TextFooterComponent
+    TextFooterComponent,
+    TitleRegistroComponent,
+    LabelRegistroComponent,
+    InputRegistroComponent,
   ],
   exports:[
     BotonCardComponent,
@@ -24,7 +30,10 @@ import { TextFooterComponent } from './text-footer/text-footer.component';
     ParrafoCardComponent,
     TitleHeaderComponent,
     CursosComponent,
-    TextFooterComponent
+    TextFooterComponent,
+    TitleRegistroComponent,
+    LabelRegistroComponent,
+    InputRegistroComponent,
   ],
   imports: [
     CommonModule

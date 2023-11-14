@@ -5,6 +5,7 @@ import { MoleculesModule } from '../molecules/molecules.module';
 import { HeaderComponent } from './header/header.component';
 import { AtomsModule } from '../atoms/atoms.module';
 import { FooterComponent } from './footer/footer.component';
+import { RegistroSectionComponent } from './registro-section/registro-section.component';
 
 
 
@@ -12,7 +13,8 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     CardSectionComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    RegistroSectionComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
   exports:[
     CardSectionComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    RegistroSectionComponent
   ]
 })
 export class OrganismsModule { }

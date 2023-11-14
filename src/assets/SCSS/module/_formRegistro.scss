@@ -1,0 +1,15 @@
+.form-registro{
+    margin-top: 40px;
+    width: 550px;
+    border-radius: 10px;
+    height: 200px;
+    border: 1px solid;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    div:nth-child(1){
+        grid-column: 1 / 3;
+    }
+}
