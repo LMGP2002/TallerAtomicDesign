@@ -9,7 +9,6 @@ import { TextFooterComponent } from './text-footer/text-footer.component';
 import { LabelRegistroComponent } from './label-registro/label-registro.component';
 import { InputRegistroComponent } from './input-registro/input-registro.component';
 import { BtnRegistroComponent } from './btn-registro/btn-registro.component';
-import { MsgAlertComponent } from './msg-alert/msg-alert.component';
 import { BtnVolverComponent } from './btn-volver/btn-volver.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { TitlePageComponent } from './title-page/title-page.component';
@@ -28,7 +27,6 @@ import { BarraProgresoComponent } from './barra-progreso/barra-progreso.componen
     LabelRegistroComponent,
     InputRegistroComponent,
     BtnRegistroComponent,
-    MsgAlertComponent,
     BtnVolverComponent,
     TitlePageComponent,
     BarraProgresoComponent

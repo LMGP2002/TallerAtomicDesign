@@ -4,11 +4,12 @@ import { AtomsModule } from '../atoms/atoms.module';
 import { CardComponent } from './card/card.component';
 import { FormRegistroComponent } from './form-registro/form-registro.component';
 import { FormsModule } from '@angular/forms';
+import { TitleCardComponent } from './title-card/title-card.component';
 
 
 
 @NgModule({
-  declarations: [CardComponent, FormRegistroComponent],
+  declarations: [CardComponent, FormRegistroComponent, TitleCardComponent],
   imports: [
     CommonModule,
     AtomsModule,
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
   ],
   exports:[
     CardComponent,
-    FormRegistroComponent
+    FormRegistroComponent,
+    TitleCardComponent
   ]
 })
 export class MoleculesModule { }

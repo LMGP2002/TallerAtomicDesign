@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MsgAlertComponent } from './msg-alert.component';
+import { TitleCardComponent } from './title-card.component';
 
-describe('MsgAlertComponent', () => {
-  let component: MsgAlertComponent;
-  let fixture: ComponentFixture<MsgAlertComponent>;
+describe('TitleCardComponent', () => {
+  let component: TitleCardComponent;
+  let fixture: ComponentFixture<TitleCardComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MsgAlertComponent]
+      declarations: [TitleCardComponent]
     });
-    fixture = TestBed.createComponent(MsgAlertComponent);
+    fixture = TestBed.createComponent(TitleCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
