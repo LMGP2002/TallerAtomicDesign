@@ -13,6 +13,8 @@ import { BtnVolverComponent } from './btn-volver/btn-volver.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { TitlePageComponent } from './title-page/title-page.component';
 import { BarraProgresoComponent } from './barra-progreso/barra-progreso.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AlertComponent } from './alert/alert.component';
 
 
 
@@ -29,7 +31,9 @@ import { BarraProgresoComponent } from './barra-progreso/barra-progreso.componen
     BtnRegistroComponent,
     BtnVolverComponent,
     TitlePageComponent,
-    BarraProgresoComponent
+    BarraProgresoComponent,
+    AlertComponent,
+    
   ],
   exports:[
     BotonCardComponent,
@@ -43,11 +47,14 @@ import { BarraProgresoComponent } from './barra-progreso/barra-progreso.componen
     BtnRegistroComponent,
     BtnVolverComponent,
     TitlePageComponent,
-    BarraProgresoComponent
+    BarraProgresoComponent,
+    AlertComponent
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ]
 })

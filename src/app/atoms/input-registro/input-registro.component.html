@@ -1,1 +1,1 @@
-<input [class]="'input-color'+colorInput" type="text" [value]="valorInput" required>
+<input (input)="onInput()" [(ngModel)]="inputValue" [class]="'input-color'+colorInput" type="text" [value]="valorInput">

@@ -1,23 +1,27 @@
-<form [class]="'form-registro form-registro'+cardNumber">
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" [class]="'form-registro form-registro'+cardNumber">
     <div>
         <app-label-registro [labelText]="'Curso:'"></app-label-registro>
-        <app-input-registro  [colorInput]='cardNumber' [valorInput]="curso"></app-input-registro>
+        <app-input-registro formControlName="curso" [colorInput]='cardNumber' [valorInput]="curso"></app-input-registro>
     </div>
     <div>
         <app-label-registro [labelText]="'Nombre:'"></app-label-registro>
-        <app-input-registro name="nombre" [colorInput]='cardNumber' ></app-input-registro>
+        <app-input-registro formControlName="nombre" name="nombre" [colorInput]='cardNumber' ></app-input-registro>
+        <app-alert *ngIf="alertNombre"></app-alert>
     </div>
     <div>
         <app-label-registro [labelText]="'Apellido:'"></app-label-registro>
-        <app-input-registro [colorInput]='cardNumber' ></app-input-registro>
+        <app-input-registro formControlName="apellido" [colorInput]='cardNumber' ></app-input-registro>
+        <app-alert *ngIf="alertApellido"></app-alert>
     </div>
     <div>
         <app-label-registro [labelText]="'Email:'"></app-label-registro>
-        <app-input-registro [colorInput]='cardNumber' ></app-input-registro>
+        <app-input-registro formControlName="email" [colorInput]='cardNumber' ></app-input-registro>
+        <app-alert *ngIf="alertEmail"></app-alert>
     </div>
     <div>
         <app-label-registro [labelText]="'Teléfono:'"></app-label-registro>
-        <app-input-registro [colorInput]='cardNumber' ></app-input-registro>
+        <app-input-registro formControlName="telefono" [colorInput]='cardNumber' ></app-input-registro>
+        <app-alert *ngIf="alertTelefono"></app-alert>
     </div>
     <app-btn-registro class="btnRegistro" [cardNumber]="cardNumber"></app-btn-registro>
 </form>

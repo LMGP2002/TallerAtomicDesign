@@ -3,9 +3,8 @@ import { CommonModule } from '@angular/common';
 import { AtomsModule } from '../atoms/atoms.module';
 import { CardComponent } from './card/card.component';
 import { FormRegistroComponent } from './form-registro/form-registro.component';
-import { FormsModule } from '@angular/forms';
 import { TitleCardComponent } from './title-card/title-card.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +12,7 @@ import { TitleCardComponent } from './title-card/title-card.component';
   imports: [
     CommonModule,
     AtomsModule,
-    FormsModule
+    ReactiveFormsModule
   ],
   exports:[
     CardComponent,
